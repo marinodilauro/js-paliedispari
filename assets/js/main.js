@@ -51,10 +51,12 @@ function isPalindrome(userWord) {
 const evenOrOdd = prompt("Inserie 'pari' o 'dispari'");
 console.log(evenOrOdd);
 
+
 // Create a varaible and assign the number entered by the user (between 1 and 5)
 
 const userNumber = Number(prompt("Inserie un numero tra 1 e 5"));
 console.log(userNumber);
+
 
 // Create a variable and assign it a random number (between 1 and 5)
 
@@ -62,4 +64,11 @@ const randomNumber = Math.floor(Math.random() * 5) + 1;
 console.log(randomNumber);
 
 
+// Add the two numbers together
+
+let sum = userNumber + randomNumber;
+console.log(sum);
+
+
+//
 // #endregion EVEN OR ODD
