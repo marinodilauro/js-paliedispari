@@ -46,44 +46,51 @@ function isPalindrome(userWord) {
 
 // #region EVEN OR ODD
 
-// Create a variable for user's choise "Even" or "Odd"
 
-const evenOrOdd = prompt("Inserie 'pari' o 'dispari'");
-console.log(evenOrOdd);
+function isEvenOrOdd(evenOrOdd, userNumber) {
 
+  // Create a variable for user's choise "Even" or "Odd"
 
-// Create a varaible and assign the number entered by the user (between 1 and 5)
-
-const userNumber = Number(prompt("Inserie un numero tra 1 e 5"));
-console.log(userNumber);
+  evenOrOdd = prompt("Inserie 'pari' o 'dispari'");
+  console.log(evenOrOdd);
 
 
-// Create a variable and assign it a random number (between 1 and 5)
+  // Create a varaible and assign the number entered by the user (between 1 and 5)
 
-const randomNumber = Math.floor(Math.random() * 5) + 1;
-console.log(randomNumber);
-
-
-// Add the two numbers together
-
-let sum = userNumber + randomNumber;
-console.log(sum);
+  userNumber = Number(prompt("Inserie un numero tra 1 e 5"));
+  console.log(userNumber);
 
 
-// Check if the sum is even or odd and tell the user if he win or lose
+  // Create a variable and assign it a random number (between 1 and 5)
 
-if (evenOrOdd === "pari") {
-  if (sum % 2 === 0) {
-    alert("Hai vinto");
-  } else {
-    alert("Hai perso");
+  const randomNumber = Math.floor(Math.random() * 5) + 1;
+  console.log(randomNumber);
+
+
+  // Add the two numbers together
+
+  let sum = userNumber + randomNumber;
+  console.log(sum);
+
+  let sumEvenOdd = "pari";
+
+  if (sum % 2 !== 0) {
+    sumEvenOdd = "dispari";
   }
-} else {
-  if (sum % 2 === 0) {
-    alert("Hai perso");
+
+  console.log(evenOrOdd);
+  console.log(sumEvenOdd);
+
+  // Check if the sum is even or odd and tell the user if he wins or loses
+
+  if (evenOrOdd === sumEvenOdd) {
+    return "Hai vinto!";
   } else {
-    alert("Hai vinto");
+    return "Hai perso!";
   }
 }
+
+const countingOut = isEvenOrOdd();
+alert(countingOut);
 
 // #endregion EVEN OR ODD
