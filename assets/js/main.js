@@ -1,6 +1,6 @@
-// PALINDROMOUS WORD
-// Ask the user to enter a word and create a function to check if the entered word is a palindrome
+// #region PALINDROMOUS WORD
 
+// Ask the user to enter a word and create a function to check if the entered word is a palindrome
 
 function isPalindrome(userWord) {
 
@@ -37,6 +37,29 @@ function isPalindrome(userWord) {
 
 }
 
-checkPalindromous = isPalindrome();
+// checkPalindromous = isPalindrome();
 
-alert(`La parola ${checkPalindromous}`);
+// alert(`La parola ${checkPalindromous}`);
+
+// #endregion PALINDROMOUS WORD
+
+
+// #region EVEN OR ODD
+
+// Create a variable for user's choise "Even" or "Odd"
+
+const evenOrOdd = prompt("Inserie 'pari' o 'dispari'");
+console.log(evenOrOdd);
+
+// Create a varaible and assign the number entered by the user (between 1 and 5)
+
+const userNumber = Number(prompt("Inserie un numero tra 1 e 5"));
+console.log(userNumber);
+
+// Create a variable and assign it a random number (between 1 and 5)
+
+const randomNumber = Math.floor(Math.random() * 5) + 1;
+console.log(randomNumber);
+
+
+// #endregion EVEN OR ODD
