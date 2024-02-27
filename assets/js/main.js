@@ -70,5 +70,11 @@ let sum = userNumber + randomNumber;
 console.log(sum);
 
 
-//
+// Check if the sum is even or odd 
+
+if (sum % 2 === 0) {
+  alert("la somma è pari")
+} else {
+  alert("la somma è dispari")
+}
 // #endregion EVEN OR ODD
