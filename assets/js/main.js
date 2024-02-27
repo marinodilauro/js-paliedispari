@@ -52,25 +52,25 @@ function isEvenOrOdd(evenOrOdd, userNumber) {
   // Create a variable for user's choise "Even" or "Odd"
 
   evenOrOdd = prompt("Inserie 'pari' o 'dispari'");
-  console.log(evenOrOdd);
+  //console.log(evenOrOdd);
 
 
   // Create a varaible and assign the number entered by the user (between 1 and 5)
 
   userNumber = Number(prompt("Inserie un numero tra 1 e 5"));
-  console.log(userNumber);
+  //console.log(userNumber);
 
 
   // Create a variable and assign it a random number (between 1 and 5)
 
   const randomNumber = Math.floor(Math.random() * 5) + 1;
-  console.log(randomNumber);
+  //console.log(randomNumber);
 
 
   // Add the two numbers together
 
   let sum = userNumber + randomNumber;
-  console.log(sum);
+  //console.log(sum);
 
   let sumEvenOdd = "pari";
 
@@ -78,8 +78,8 @@ function isEvenOrOdd(evenOrOdd, userNumber) {
     sumEvenOdd = "dispari";
   }
 
-  console.log(evenOrOdd);
-  console.log(sumEvenOdd);
+  //console.log(evenOrOdd);
+  //console.log(sumEvenOdd);
 
   // Check if the sum is even or odd and tell the user if he wins or loses
 
