@@ -70,11 +70,20 @@ let sum = userNumber + randomNumber;
 console.log(sum);
 
 
-// Check if the sum is even or odd 
+// Check if the sum is even or odd and tell the user if he win or lose
 
-if (sum % 2 === 0) {
-  alert("la somma è pari")
+if (evenOrOdd === "pari") {
+  if (sum % 2 === 0) {
+    alert("Hai vinto");
+  } else {
+    alert("Hai perso");
+  }
 } else {
-  alert("la somma è dispari")
+  if (sum % 2 === 0) {
+    alert("Hai perso");
+  } else {
+    alert("Hai vinto");
+  }
 }
+
 // #endregion EVEN OR ODD
